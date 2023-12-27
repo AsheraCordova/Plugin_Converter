@@ -49,6 +49,7 @@ public class CommonConverters {
 	public final static String dimensiondppx = "dimensiondppx";
 	public final static String object = "object";
 	public final static String array = "array";
+	public final static String nil = "nil";
 	public final static String listtointarray = "listtointarray";
 	
 	public final static String command_generic = "command_generic";
@@ -84,6 +85,7 @@ public class CommonConverters {
 		ConverterFactory.register(object, new ObjectToMapConverter());
 		ConverterFactory.register(array, new ArrayConverter());
 		ConverterFactory.register(listtointarray, new ListToIntArrayConverter());
+		ConverterFactory.register(nil, new NilConverter());
 
 		ConverterFactory.registerCommandConverter(new PasswordCommandConveter(command_password));
 		ConverterFactory.registerCommandConverter(new UpperCaseCommandConveter(command_uppercase));
