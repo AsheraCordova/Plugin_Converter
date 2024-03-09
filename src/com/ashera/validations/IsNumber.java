@@ -35,6 +35,6 @@ public class IsNumber extends BaseValidator {
     	if (text == null || text.isEmpty()) {
     		return true;
     	}
-        return text.matches("[0-9]*");
+        return text.matches("-?\\d*");
     }
 }
