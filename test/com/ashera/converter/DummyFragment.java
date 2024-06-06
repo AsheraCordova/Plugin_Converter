@@ -3,6 +3,7 @@ package com.ashera.converter;
 import java.util.List;
 
 import com.ashera.core.IActivity;
+import com.ashera.core.IFragment;
 import com.ashera.css.StyleSheet;
 import com.ashera.model.Error;
 import com.ashera.model.Errors;
@@ -213,5 +214,15 @@ public class DummyFragment implements com.ashera.core.IFragment {
 	@Override
 	public void setInlineResource(String key, String value, boolean append) {
 		
+	}
+
+	@Override
+	public IFragment getParent() {
+		return null;
+	}
+
+	@Override
+	public String getUId() {
+		return null;
 	}
 }
