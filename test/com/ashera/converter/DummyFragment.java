@@ -225,4 +225,10 @@ public class DummyFragment implements com.ashera.core.IFragment {
 	public String getUId() {
 		return null;
 	}
+
+	@Override
+	public IFragment getRootFragment() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
