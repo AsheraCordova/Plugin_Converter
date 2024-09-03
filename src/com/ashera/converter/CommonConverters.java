@@ -86,6 +86,7 @@ public class CommonConverters {
 		ConverterFactory.register(array, new ArrayConverter());
 		ConverterFactory.register(listtointarray, new ListToIntArrayConverter());
 		ConverterFactory.register(nil, new NilConverter());
+		ConverterFactory.register("overlay_bounds", new OverlayBoundsConverter());
 
 		ConverterFactory.registerCommandConverter(new PasswordCommandConveter(command_password));
 		ConverterFactory.registerCommandConverter(new UpperCaseCommandConveter(command_uppercase));
