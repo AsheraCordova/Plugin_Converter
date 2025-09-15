@@ -197,7 +197,7 @@ public class DummyFragment implements com.ashera.core.IFragment {
 	}
 
 	@Override
-	public void onCloseDialog() {
+	public void onCloseDialog(java.util.Map<java.lang.String, java.lang.String> eventData) {
 		
 	}
 
@@ -228,7 +228,16 @@ public class DummyFragment implements com.ashera.core.IFragment {
 
 	@Override
 	public IFragment getRootFragment() {
-		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getRootDirectory() {
+		return null;
+	}
+
+	@Override
+	public String getNamespace() {
 		return null;
 	}
 }
