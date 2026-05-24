@@ -16,6 +16,7 @@
 package com.ashera.converter;
 
 import java.util.List;
+import java.util.Map;
 
 import com.ashera.core.IActivity;
 import com.ashera.core.IFragment;
@@ -34,11 +35,6 @@ public class DummyFragment implements com.ashera.core.IFragment {
 
 	@Override
 	public void onDetach() {
-		
-	}
-
-	@Override
-	public void onCreate() {
 		
 	}
 
@@ -254,5 +250,15 @@ public class DummyFragment implements com.ashera.core.IFragment {
 	@Override
 	public String getNamespace() {
 		return null;
+	}
+
+	@Override
+	public void sendEvent(String action, Map<String, String> extraData) {
+		
+	}
+
+	@Override
+	public void onCreate(Object... args) {
+		
 	}
 }
